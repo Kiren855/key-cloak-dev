@@ -15,5 +15,4 @@ ENV QUARKUS_DATASOURCE_PASSWORD=${DB_PASSWORD}
 ENV QUARKUS_DATASOURCE_JDBC_URL=jdbc:postgresql://dpg-csfmong8fa8c73a0kmrg-a.singapore-postgres.render.com:5432/keycloak_db_z5z2
 
 EXPOSE 8080
-
 ENTRYPOINT ["/opt/keycloak/bin/kc.sh", "start-dev"]
