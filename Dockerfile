@@ -6,4 +6,4 @@ ENV KC_DB_URL=${DATABASE_URL}
 ENV KC_DB_USERNAME=${DB_USERNAME}
 ENV KC_DB_PASSWORD=${DB_PASSWORD}
 EXPOSE 8080
-ENTRYPOINT ["kc.sh", "start-dev"]
+ENTRYPOINT ["/opt/keycloak/bin/kc.sh", "start-dev"]
